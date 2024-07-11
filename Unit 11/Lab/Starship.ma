@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Starship.ma
-//Last modified: Wed, Jul 10, 2024 11:42:17 PM
+//Last modified: Wed, Jul 10, 2024 11:45:32 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.0";
@@ -10,17 +10,17 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202302170737-4500172811";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22631)";
-fileInfo "UUID" "337C13AA-4BB3-7904-5619-21A68551E3EA";
+fileInfo "UUID" "A863D470-41DD-4E0B-6908-249AEA7B160C";
 createNode transform -s -n "persp";
 	rename -uid "9F65083C-43B6-9780-FE83-BA9626D075E9";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 12.362238396769605 9.0624346255837036 19.46550541571759 ;
-	setAttr ".r" -type "double3" -9.3383527297047486 26.600000000001376 -4.4463171878294882e-16 ;
+	setAttr ".t" -type "double3" 0.76993402014808621 6.6703373950372606 16.454313588967047 ;
+	setAttr ".r" -type "double3" -2.1383527296910079 -361.79999999999774 -1.8645262898405696e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "FBFFA54B-408E-E5F6-454C-34ACA15E3439";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 23.553267237016758;
+	setAttr ".coi" 12.376913362192774;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -34,7 +34,7 @@ createNode camera -s -n "topShape" -p "top";
 	setAttr -k off ".v";
 	setAttr ".rnd" no;
 	setAttr ".coi" 1000.1;
-	setAttr ".ow" 9.5433692500234013;
+	setAttr ".ow" 32.380123782765914;
 	setAttr ".imn" -type "string" "top";
 	setAttr ".den" -type "string" "top_depth";
 	setAttr ".man" -type "string" "top_mask";
@@ -43,13 +43,13 @@ createNode camera -s -n "topShape" -p "top";
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode transform -s -n "front";
 	rename -uid "478D3D68-4F62-666D-A61B-1087424C97CA";
-	setAttr ".t" -type "double3" 3.1165089271301953 5.5155446527445351 1000.1 ;
+	setAttr ".t" -type "double3" 1.7874745463129487 3.6135980617894603 1000.1 ;
 createNode camera -s -n "frontShape" -p "front";
 	rename -uid "3C26D76E-40A2-8C5A-4E59-D5B10FD3E442";
 	setAttr -k off ".v";
 	setAttr ".rnd" no;
 	setAttr ".coi" 1000.1;
-	setAttr ".ow" 2.6844394026958902;
+	setAttr ".ow" 16.057682809482131;
 	setAttr ".imn" -type "string" "front";
 	setAttr ".den" -type "string" "front_depth";
 	setAttr ".man" -type "string" "front_mask";
@@ -65,7 +65,7 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr -k off ".v";
 	setAttr ".rnd" no;
 	setAttr ".coi" 1000.1;
-	setAttr ".ow" 27.88378186952523;
+	setAttr ".ow" 26.995961141415144;
 	setAttr ".imn" -type "string" "side";
 	setAttr ".den" -type "string" "side_depth";
 	setAttr ".man" -type "string" "side_mask";
